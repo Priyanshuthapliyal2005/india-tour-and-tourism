@@ -1,0 +1,162 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+/* Global Styles */
+h1 {
+    font-size: 2em;
+    margin-left: 20px;
+    text-align: left;
+    color: rgb(255, 94, 0);
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #333;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Destination Section Styles */
+.destination-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.image-info {
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+}
+
+.info-text {
+    width: 35%;
+}
+
+.info-text h2 {
+    font-size: 1.5em;
+}
+
+.info-text p {
+    font-size: 1em;
+}
+
+/* Image Block Styles */
+.image-block {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+    height: auto; /* Remove fixed height to allow images to adapt */
+    overflow: hidden; /* Hide any content that overflows the fixed height */
+}
+
+.image-block img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+}
+
+/* Read More Section Styles */
+.more-info {
+    display: none; /* Initially hide the additional information */
+}
+
+#more-info-toggle:checked + .more-info {
+    display: block; /* Show the additional information when the checkbox is checked */
+}
+
+.read-more-label {
+    cursor: pointer;
+    color: blue;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .destination-section {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+    
+    .info-text,
+    .image-info {
+        width: 100%; /* Full width for text and image info on smaller screens */
+    }
+    
+    .image-block {
+        width: 100%; /* Full width for image blocks on smaller screens */
+    }
+}
